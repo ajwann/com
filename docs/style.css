@@ -1,6 +1,5 @@
 body {
-  background: rgb(152,255,152);
-  background: linear-gradient(90deg, rgba(152,255,152,1) 20%, rgba(0,255,255,1) 65%); 
+  background:  #56887d;
 }
 
 .flex-container {
@@ -15,9 +14,6 @@ body {
   padding: 1.5em;
   margin: 1.5em;
   border-radius: 50%;
-  
-  --animation: rotate3d 8s ease infinite;
-  --transition: all 1s 1s;
 }
 
 .link-icon {
@@ -47,4 +43,25 @@ body {
   width: 1em;
   height: 1em;
   margin-left: auto;
+}
+
+.panel {
+---webkit-tap-highlight-color: transparent;
+--font: normal 75% Arial, Helvetica, sans-serif;
+--border: 0;
+--outline: 0;
+--vertical-align: baseline;
+font-size: 1.3em;
+position: absolute;
+width: 0px;
+height: 100%;
+background: #eee;
+--top: 0px;
+left: 50%;
+--margin: -110px 0 0 -100px;
+--padding: 20px;
+--border-radius: 4px;
+--box-sizing: border-box;
+--z-index: 100;
+--display: block;
 }
