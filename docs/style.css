@@ -51,7 +51,7 @@ body {
 --border: 0;
 --outline: 0;
 --vertical-align: baseline;
-font-size: 1.3em;
+--font-size: 1.3em;
 position: absolute;
 width: 0px;
 height: 100%;
