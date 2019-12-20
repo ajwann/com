@@ -1,5 +1,5 @@
 var message = `
-Hi there, my name is Adam. I'm a software developer with expertise in Ruby
+Hi there, my name is Adam. I'm a software engineer with expertise in Ruby
     on Rails. I also have experience with front end Javascript frameworks 
     such as Ember and React. I'm passionate about open source software, and in my free time I like
     to contribute to <a class="link-text" href='https://github.com/bundler/bundler/commits?author=ajwann'>Bundler</a>
