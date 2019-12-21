@@ -1,21 +1,20 @@
 body {
-  background:  #56887d;
+  background:  #002b36;
+  margin: 0;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .flex-item {
+  --border: 1px solid green;
+  margin: 2em;
   align-items: center;
   justify-content: center;
-  --padding: 1.5em;
-  margin: 1em;
-  border-radius: 50%;
-  flex: 1;
 }
 
 .link-icon {
@@ -28,19 +27,21 @@ body {
 
 .link-icon {
   text-decoration: none;
-  color: #2C3539;
+  color: #fdf6e3;
 }
 
 .link-text {
-  color: #2f4f4f;
+  color: #268bd2;
 }
 
 .about-content {
-  font-size: 1em;
-  border: 1px solid black;
-  padding: .2em;
+  font-size: 1.5em;
+  --border: 1px solid purple;
+  padding: .1em;
   text-align: justify;
   text-justify: inter-word;
+  width: 75vw;
+  color: #eee8d5;
 }
 
 #about-content-exit {
@@ -50,33 +51,23 @@ body {
 }
 
 .panel {
----webkit-tap-highlight-color: transparent;
---font: normal 75% Arial, Helvetica, sans-serif;
---border: 0;
---outline: 0;
---vertical-align: baseline;
-font-size: 1.3em;
-position: absolute;
-width: 20em;
---height: 100%;
---background: #eee;
---top: 0px;
-left: 50%;
-margin-left: -10em;
---margin: -110px 0 0 -100px;
---padding: 20px;
---border-radius: 4px;
---box-sizing: border-box;
-z-index: 100;
---display: block;
+  --border: 1px red solid;
+  font-size: 100%;
+  position: absolute;
+  width: 2%;
+  height: 100%;
+  left: 50%; 
+  margin-left: -1%;
+  z-index: 100;
 }
 
 #particles-js {
-position: absolute;
-width: 100%;
-height: 100%;
-background-image: url("");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 50% 50%;
+  --border: 1px yellow solid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
