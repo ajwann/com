@@ -35,7 +35,7 @@ body {
 }
 
 .about-content {
-  font-size: 1.5em;
+  font-size: 1em;
   --border: 1px solid purple;
   padding: .1em;
   text-align: justify;
