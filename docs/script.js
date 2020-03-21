@@ -14,7 +14,7 @@ Hi, my name is Adam. I'm a software engineer with expertise in Ruby
 `;
 
 var github = document.getElementById("github");
-var blog = document.getElementById("blog");
+var resume = document.getElementById("resume");
 var flexParent = github.parentNode;
 var about = document.getElementById("about");
 var infoIconHTML = about.innerHTML;
@@ -22,7 +22,7 @@ var infoIconHTML = about.innerHTML;
 about.addEventListener('click', function(e) {
   // temporarily remove other links from the DOM
   flexParent.removeChild(github);
-  flexParent.removeChild(blog);
+  flexParent.removeChild(resume);
   // replace the info icon with actual info
   about.innerHTML = 
     '<div class="about-content"><div id="about-content-exit"><i class="fas fa-window-close"></i></div>' + message + '</div>';
@@ -31,7 +31,7 @@ about.addEventListener('click', function(e) {
   aboutExit.addEventListener('click', function(e) {
   e.stopPropagation();
   flexParent.appendChild(github);
-  flexParent.appendChild(blog);
+  flexParent.appendChild(resume);
   about.innerHTML = infoIconHTML;
 })
 });
