@@ -27,7 +27,6 @@ body {
 
 .simulate-hover {
   transform: rotateY(1080deg);
-  transition: transform 3s;
 }
 
 .link-icon {
