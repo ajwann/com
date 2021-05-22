@@ -1,5 +1,3 @@
-alert('debug 3');
-
 var message = `
 Hi, my name is Adam. I'm a software engineer with expertise in Ruby
     on Rails. I also have experience with front end Javascript frameworks 
@@ -26,19 +24,19 @@ var infoIconHTML = about.innerHTML;
 about.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
-    navigator.vibrate(20);
+    navigator.vibrate(50);
   }
 });
 github.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
-    navigator.vibrate(20);
+    navigator.vibrate(50);
   }
 });
 resume.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
-    navigator.vibrate(20);
+    navigator.vibrate(50);
   }
 });
 
@@ -73,7 +71,7 @@ about.addEventListener('click', function(e) {
     aboutExit.addEventListener('click', function(e) {
       e.stopPropagation();
       if (navigator.vibrate) {
-        navigator.vibrate(20);
+        navigator.vibrate(50);
       }
       flexParent.appendChild(github);
       flexParent.appendChild(resume);
