@@ -21,7 +21,6 @@ var infoIconHTML = about.innerHTML;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
   setTimeout(function() {
-    alert('Hi!');
     about.classList.add("simulate-hover");
     github.classList.add("simulate-hover");
     resume.classList.add("simulate-hover");
