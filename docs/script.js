@@ -20,10 +20,12 @@ var about = document.getElementById("about");
 var infoIconHTML = about.innerHTML;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-  alert('hi!');
-  github.classList.add("simulate-hover");
-  resume.classList.add("simulate-hover");
-  about.classList.add("simulate-hover");
+  setTimeout(function() {
+    alert('hi!');
+    github.classList.add("simulate-hover");
+    resume.classList.add("simulate-hover");
+    about.classList.add("simulate-hover");
+  }, 1000);
 });
 
 about.addEventListener('click', function(e) {
