@@ -24,19 +24,19 @@ var infoIconHTML = about.innerHTML;
 about.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
-    navigator.vibrate(100);
+    navigator.vibrate(20);
   }
 });
 github.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
-    navigator.vibrate(100);
+    navigator.vibrate(20);
   }
 });
 resume.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
-    navigator.vibrate(100);
+    navigator.vibrate(20);
   }
 });
 
@@ -71,7 +71,7 @@ about.addEventListener('click', function(e) {
     aboutExit.addEventListener('click', function(e) {
       e.stopPropagation();
       if (navigator.vibrate) {
-        navigator.vibrate(100);
+        navigator.vibrate(20);
       }
       flexParent.appendChild(github);
       flexParent.appendChild(resume);
