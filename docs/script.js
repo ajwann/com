@@ -19,6 +19,12 @@ var flexParent = github.parentNode;
 var about = document.getElementById("about");
 var infoIconHTML = about.innerHTML;
 
+document.addEventListener("DOMContentLoaded", function(event) { 
+  github.classList.add("simulate-hover");
+  resume.classList.add("simulate-hover");
+  about.classList.add("simulate-hover");
+});
+
 about.addEventListener('click', function(e) {
   // temporarily remove other links from the DOM
   flexParent.removeChild(github);
