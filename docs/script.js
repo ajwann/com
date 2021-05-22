@@ -20,6 +20,27 @@ var resume = document.getElementById("resume");
 var flexParent = github.parentNode;
 var infoIconHTML = about.innerHTML;
 
+//vibrate when icon touched
+about.addEventListener('click', function(e) {
+  e.stopPropagation();
+  if (navigator.vibrate) {
+    navigator.vibrate(100);
+  }
+});
+github.addEventListener('click', function(e) {
+  e.stopPropagation();
+  if (navigator.vibrate) {
+    navigator.vibrate(100);
+  }
+});
+resume.addEventListener('click', function(e) {
+  e.stopPropagation();
+  if (navigator.vibrate) {
+    navigator.vibrate(100);
+  }
+});
+
+//spin icons on page load
 document.addEventListener("DOMContentLoaded", function(event) { 
   setTimeout(function() {
     about.classList.add("simulate-hover");
@@ -32,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }, 1400);
 });
 
+//show about message when about icon clicked
 about.addEventListener('click', function(e) {
   e.stopPropagation();
   if(aboutTimeout) {
