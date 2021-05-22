@@ -25,6 +25,10 @@ body {
   transform: rotateY(1080deg);
 }
 
+.simulate-hover {
+  transform: rotateY(1080deg);
+}
+
 .link-icon {
   text-decoration: none;
   color: #fdf6e3;
