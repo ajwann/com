@@ -34,7 +34,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 about.addEventListener('click', function(e) {
   e.stopPropagation();
-  setTimeout(function() {
+  if(aboutTimeout) {
+    clearTimeout(aboutTimeout);
+  }
+  var aboutTimeout = setTimeout(function() {
     // temporarily remove other links from the DOM
     flexParent.removeChild(github);
     flexParent.removeChild(resume);
