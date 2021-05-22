@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 about.addEventListener('click', function(e) {
+  e.stopPropagation();
   setTimeout(function() {
     // temporarily remove other links from the DOM
     flexParent.removeChild(github);
@@ -43,10 +44,10 @@ about.addEventListener('click', function(e) {
   }, 2000);
   var aboutExit = document.getElementById("about-content-exit");
   aboutExit.addEventListener('click', function(e) {
+    e.stopPropagation();
     if (navigator.vibrate) {
       navigator.vibrate(500);
     }
-    e.stopPropagation();
     flexParent.appendChild(github);
     flexParent.appendChild(resume);
     about.innerHTML = infoIconHTML;
