@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     about.classList.add("simulate-hover");
     github.classList.add("simulate-hover");
     resume.classList.add("simulate-hover");
-  }, 1100);
+  }, 2000);
 });
 
 about.addEventListener('click', function(e) {
