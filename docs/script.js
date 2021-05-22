@@ -13,10 +13,10 @@ Hi, my name is Adam. I'm a software engineer with expertise in Ruby
 <a class="link-text" href="mailto:ajwann@ajwann.com">Get in touch</a>
 `;
 
+var about = document.getElementById("about");
 var github = document.getElementById("github");
 var resume = document.getElementById("resume");
 var flexParent = github.parentNode;
-var about = document.getElementById("about");
 var infoIconHTML = about.innerHTML;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -32,13 +32,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 about.addEventListener('click', function(e) {
-  // temporarily remove other links from the DOM
-  flexParent.removeChild(github);
-  flexParent.removeChild(resume);
-  // replace the info icon with actual info
-  about.innerHTML = 
-    '<div class="about-content"><div id="about-content-exit"><i class="fas fa-window-close"></i></div>' + message + '</div>';
-  
+  setTimeout(function() {
+    // temporarily remove other links from the DOM
+    flexParent.removeChild(github);
+    flexParent.removeChild(resume);
+    // replace the info icon with actual info
+    about.innerHTML = 
+      '<div class="about-content"><div id="about-content-exit"><i class="fas fa-window-close"></i></div>' + message + '</div>';
+  }, 2000);
   var aboutExit = document.getElementById("about-content-exit");
   aboutExit.addEventListener('click', function(e) {
   e.stopPropagation();
