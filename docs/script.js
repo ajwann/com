@@ -21,11 +21,14 @@ var infoIconHTML = about.innerHTML;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
   setTimeout(function() {
-    alert('hi!');
     github.classList.add("simulate-hover");
+  }, 900);
+  setTimeout(function() {
     resume.classList.add("simulate-hover");
-    about.classList.add("simulate-hover");
   }, 1000);
+  setTimeout(function() {
+    about.classList.add("simulate-hover");
+  }, 1100);
 });
 
 about.addEventListener('click', function(e) {
