@@ -1,4 +1,4 @@
-alert('debug 5');
+alert('debug 6');
 
 var message = `
 Hi, my name is Adam. I'm a software engineer with expertise in Ruby
@@ -23,12 +23,6 @@ var flexParent = github.parentNode;
 var infoIconHTML = about.innerHTML;
 
 //vibrate when icon touched
-about.addEventListener('click', function(e) {
-  e.stopPropagation();
-  if (navigator.vibrate) {
-    navigator.vibrate(50);
-  }
-}, true);
 github.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
@@ -58,6 +52,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //show about message when about icon clicked
 about.addEventListener('click', function(e) {
   e.stopPropagation();
+  if (navigator.vibrate && !about.showingMessage) {
+    navigator.vibrate(50);
+  }
   if(aboutTimeout) {
     clearTimeout(aboutTimeout);
   }
@@ -68,15 +65,8 @@ about.addEventListener('click', function(e) {
     // replace the info icon with actual info
     about.innerHTML = 
       '<div class="about-content"><div id="about-content-exit"><i class="fas fa-window-close"></i></div>' + message + '</div>';
-
+    about.showingMessage = true;
     var aboutExit = document.getElementById("about-content-exit");
-    //remove the click event that vibrates
-    about.removeEventListener("click", function(e) {
-      e.stopPropagation();
-        if (navigator.vibrate) {
-        navigator.vibrate(50);
-      }
-    }, true);     
     aboutExit.addEventListener('click', function(e) {
       e.stopPropagation();
       if (navigator.vibrate) {
