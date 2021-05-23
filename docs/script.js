@@ -1,3 +1,5 @@
+alert('debug 4');
+
 var message = `
 Hi, my name is Adam. I'm a software engineer with expertise in Ruby
     on Rails. I also have experience with front end Javascript frameworks 
