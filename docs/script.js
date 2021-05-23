@@ -26,7 +26,7 @@ about.addEventListener('click', function(e) {
   if (navigator.vibrate) {
     navigator.vibrate(50);
   }
-});
+}, false);
 github.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
@@ -68,6 +68,13 @@ about.addEventListener('click', function(e) {
       '<div class="about-content"><div id="about-content-exit"><i class="fas fa-window-close"></i></div>' + message + '</div>';
 
     var aboutExit = document.getElementById("about-content-exit");
+    //remove the click event that vibrates
+    about.removeEventListener("click", function(e) {
+      e.stopPropagation();
+        if (navigator.vibrate) {
+        navigator.vibrate(50);
+      }
+    }, false);     
     aboutExit.addEventListener('click', function(e) {
       e.stopPropagation();
       if (navigator.vibrate) {
