@@ -1,4 +1,4 @@
-alert('debug 6');
+alert('debug 8');
 
 var message = `
 Hi, my name is Adam. I'm a software engineer with expertise in Ruby
@@ -52,7 +52,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //show about message when about icon clicked
 about.addEventListener('click', function(e) {
   e.stopPropagation();
-  if (navigator.vibrate && !about.showingMessage) {
+  if (about.showingMessage) { return; }
+  if (navigator.vibrate) {
     navigator.vibrate(50);
   }
   if(aboutTimeout) {
