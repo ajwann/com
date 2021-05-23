@@ -1,4 +1,4 @@
-alert('debug 4');
+alert('debug 5');
 
 var message = `
 Hi, my name is Adam. I'm a software engineer with expertise in Ruby
@@ -28,7 +28,7 @@ about.addEventListener('click', function(e) {
   if (navigator.vibrate) {
     navigator.vibrate(50);
   }
-}, false);
+}, true);
 github.addEventListener('click', function(e) {
   e.stopPropagation();
   if (navigator.vibrate) {
@@ -76,7 +76,7 @@ about.addEventListener('click', function(e) {
         if (navigator.vibrate) {
         navigator.vibrate(50);
       }
-    }, false);     
+    }, true);     
     aboutExit.addEventListener('click', function(e) {
       e.stopPropagation();
       if (navigator.vibrate) {
