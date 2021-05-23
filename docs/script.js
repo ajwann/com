@@ -76,6 +76,7 @@ about.addEventListener('click', function(e) {
       flexParent.appendChild(github);
       flexParent.appendChild(resume);
       about.innerHTML = infoIconHTML;
+      about.showingMessage = false;
     })
   }, 1500);
 });
