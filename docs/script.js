@@ -33,6 +33,7 @@ resume.addEventListener('click', function(e) {
   if (navigator.vibrate) {
     navigator.vibrate(50);
   }
+  alert("For an up to date resume, please reach out to adam@awanninger.com");
 });
 
 //spin icons on page load
